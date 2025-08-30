@@ -1,0 +1,80 @@
+/* CSS Document */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff4e1;
+  color: #2c2f4a; /* darker blue for text */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding: 0px;
+}
+
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f57c00;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover {
+  color: #2c2f4a;
+  border-bottom: 2px solid #2c2f4a;
+}
+
+.custom-hr {
+  border: none;
+  height: 3px;          /* Makes it appear bold */
+  width: 60%;           /* Controls left/right spacing */
+  background-color: #003366; /* Dark blue or any color you prefer */
+  margin: 20px auto;        /* Centers it with vertical spacing */
+  border-radius: 2px; 
+}
+
+/* Main Content */
+main {
+  padding: 0px;
+}
