@@ -27,7 +27,7 @@ body {
 /* Header and Navigation */
 header {
   background-color: #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #2c2f4a;
   color: #fff;
   padding: 0px;
 }
@@ -68,13 +68,141 @@ header {
 .custom-hr {
   border: none;
   height: 3px;          /* Makes it appear bold */
-  width: 60%;           /* Controls left/right spacing */
-  background-color: #003366; /* Dark blue or any color you prefer */
-  margin: 20px auto;        /* Centers it with vertical spacing */
+  width: 80%;           /* Controls left/right spacing */
+  background-color: #f57c00; /* Dark blue or any color you prefer */
+  margin: 0px auto;
   border-radius: 2px; 
 }
 
 /* Main Content */
 main {
   padding: 0px;
+}
+
+h2 {
+	padding-bottom: 10px;
+}
+
+.content {
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	background-color: #ffffff;
+	border: 1px solid #2c2f4a;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+ul {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.table-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.table-container table:first-child {
+	width: 38%;
+	border: none;
+	border-collapse: collapse;
+}
+
+.table-container table:last-child {
+	width: 60%;
+	border: none;
+	border-collapse: collapse;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th, td {
+	border: none;
+	padding: 8px;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.skills-heading {
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 10px;
+	padding-left: 25px;
+}
+
+.circle-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #fff4e1;
+	pointer-events: none;
+}
+
+.left-aligned {
+	text-align: left;
+}
+
+.centered {
+	margin: 0px auto;
+	text-align: center;
+}
+
+/* Style for the container within the table cell */
+.skills-list {
+  background-color: #fbfbfb; /* Optional: adds a light gray background */
+  border: 1px solid #aaaaaa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 15px;
+}
+
+/* Style the unordered list */
+.skills-list ul {
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+/* Style each list item (each skill) */
+.skills-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee; /* Creates the horizontal line separator */
+  display: flex; /* Aligns the image and text horizontally */
+  align-items: center; /* Vertically centers the image and text */
+}
+
+/* Remove the border from the last item */
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
+/* Style the images inside the list items */
+.skills-list img {
+  width: 24px; /* Adjust the icon size as needed */
+  height: 24px;
+  margin-right: 15px; /* Adds space between the icon and the text */
 }
