@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Contact</title>
+	<title>Homepage</title>
 	<link rel="favicon" href="Graphics/Logo.svg" type="image/x-icon">
 	<link rel="stylesheet" href="StyleSheets/styles.css" />
 </head>
+
+<script src="script.js"></script>
 
 <body>
 	<header>
@@ -23,8 +25,71 @@
 		  </nav>
 		</div>
   </header>
+
+  <div class="content">
+
+	<!-- Interested in working together or learning more about my experience? Feel free to reach out.
+		Include:
+			Contact form
+				- Name
+				- Email
+				- Message
+			Email
+			LinkedIn
+			GitHub 
+	-->
+
+	<h1>Contact Me</h1>
+
+	<section class="hero">
+		<div>
+
+			<!-- Left Side-->
+			<div>
+				<p class="centered-social"> <a href="mailto:khamna5400@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/hk-hamnakhan" target="_blank">LinkedIn</a> | <a href="https://github.com/khamna5400" target="_blank">GitHub</a> </p>
+
+				<br>
+
+				<h3>Interested in working together or learning more about my experience? Feel free to reach out.</h3>
+
+				<div class="form-container">
+					<form action="contact.php" method="POST" id="contactForm"> 
+
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required minlength="2"><br>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required><br>
+						</div>
+
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required minlength="10" rows="10" cols="50"></textarea><br>
+						</div>
+						
+						<div class="hero_cta">
+							<button class="btn btn_primary" type="submit">Submit</button>
+							<button class="btn btn_primary" type="reset">Reset</button>
+						</div>
+					
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+  </div>	
+
+  <footer>
+	<p>&copy; 2025 Hamna Khan. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-
 
 
