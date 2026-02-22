@@ -318,6 +318,7 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
+/* Large Tablet/Small Laptop View */
 @media (max-width: 1100px){
   .flip-grid{
     grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -325,6 +326,7 @@ h1, h2, h3 {
   }
 }
 
+/* Small Tablet View */
 @media (max-width: 980px){
   .left-content{
     grid-template-columns: 1fr;
@@ -362,7 +364,7 @@ h1, h2, h3 {
     margin: 0 auto;
   }
 
-  .hero_cta{
+  .hero .hero_cta{
     justify-content: center;
   }
 
@@ -387,6 +389,12 @@ h1, h2, h3 {
     text-align: center;
   }
 
+  .mdm-font{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
   .cta-section .hero_cta{
     justify-content: center;
     width: 100%;
@@ -398,7 +406,8 @@ h1, h2, h3 {
   }
 }
 
-@media (max-width: 640px){
+/* Mobile View */
+@media (max-width: 600px){
   .flip-grid{
     grid-template-columns: 1fr;
     gap: 16px;
@@ -411,6 +420,28 @@ h1, h2, h3 {
 
   .cta-section .hero_cta{
     justify-content: center;
+    width: 100%;
+  }
+
+  .mdm-font{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .form-group{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  label{
+    flex: none;
+    padding: 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea{
     width: 100%;
   }
 }
@@ -443,6 +474,42 @@ header {
   padding: 10px;
 }
 
+.nav_bar li{
+  list-style: none;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.nav-links li{
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f57c00;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover {
+  color: #2c2f4a;
+  border-bottom: 2px solid #2c2f4a;
+}
+
 .centered-social{
   text-align: center;
   font-size: 1.05rem;
@@ -469,6 +536,16 @@ form {
   text-align: left;
 }
 
+form .hero_cta{
+  justify-content: center;
+  width: 100%;
+}
+
+form .hero_cta .btn,
+form .hero_cta button{
+  margin-left: 0;
+}
+
 .form-container{
   display: flex;
   justify-content: center;
@@ -478,21 +555,23 @@ form {
 
 .form-group {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  margin-bottom: 12px;
 }
 
 label {
-  flex: 0 0 80px; /* Fixed width of 100px, won't grow or shrink */
-  padding-top: 8px;
+  flex: none;
+  padding: 0;
   font-weight: medium;
 }
 
 input[type="text"],
   input[type="email"],
   textarea {
-    flex: 1; /* Takes up the remaining space */
+    flex: 1;
+    width: 100%;
     padding: 8px;
     border: 1px solid #414141;
     border-radius: 4px;
@@ -523,42 +602,6 @@ footer {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
-  padding: 0px auto;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-.logo {
-  height: 100px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding-right: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-links li a:hover {
-  color: #2c2f4a;
-  border-bottom: 2px solid #2c2f4a;
-}
-
-.custom-hr {
-  border: none;
   height: 3px;          /* Makes it appear bold */
   width: 80%;           /* Controls left/right spacing */
   background-color: #f57c00; /* Dark blue or any color you prefer */
@@ -717,6 +760,12 @@ th, td {
 .centered {
 	margin: 0px auto;
 	text-align: center;
+}
+
+.mdm-font {
+  font-size: 17px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Style for the container within the table cell */
