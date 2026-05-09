@@ -6,7 +6,7 @@ const projects = [
     title: "Hiver",
     desc: "Full-stack social platform built with Flutter and structured backend architecture supporting event discovery and user interaction.",
     tags: ["Flutter", "Dart", "Firebase", "Backend Systems"],
-    link: "https://thehiverapp.com/",
+    // link: "https://thehiverapp.com/",
   },
   {
     title: "PrimeVend",
